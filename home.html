@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>dongkcs</title>
+    <link rel="shortcut icon" href="./favicon.png">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div class="root-container">
+    <div class="header-container">
+<!--        <div class="post-image" style="background-image: url(https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg@webp)"></div>-->
+        <div class="post-image" style="background-image: url(thumb.jpeg)">
+
+        </div>
+        <div class="post-video" id="post-video">
+            <script>window.loadedVideo =[];window.loopStarted =false;window.currentVideo =-1;var loop =function () {var next =window.currentVideo + 1;if (next >=window.loadedVideo.length) {next =0;}
+                if (window.currentVideo !==-1) {var currentel =window.loadedVideo[window.currentVideo];currentel.classList.remove('current');}
+                var nextel =window.loadedVideo[next];nextel.currentTime =0;nextel.classList.add('current');window.currentVideo =next;setTimeout(loop,8500);}
+            window.registerVideo =function (el) {window.loadedVideo.push(el);if (!window.loopStarted &&window.loadedVideo.length >=2) {loop();window.loopStarted =true;}
+            }
+            </script>
+            <video id="video" style="object-fit: fill" onloadeddata="window.registerVideo(this)" src="./sxgn.mp4" muted autoplay loop controls ></video>
+        </div>
+
+        <nav class="navbar">
+            <div class="navbar-content">
+                <!-- logo -->
+                <div class="navbar-logo">
+                    <a href="/">
+
+                        dongkcs
+
+                    </a>
+                </div>
+                <!-- link -->
+                <div class="navbar-link">
+                    <div class="navbar-btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="navbar-list">
+
+                        <li class="navbar-list-item"><a href="https://dongkcs.gitee.io/">博客</a></li>
+
+                        <li class="navbar-list-item"><a href="https://dongkcs.github.io/docsify/">文档</a></li>
+
+                        <li class="navbar-list-item"><a href="https://dongkcs.github.io/Gallery/">画廊</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content">
+            <div class="post-text layout-block layout-padding">
+                <h1 class="title-wrap">dongkcs</h1>
+
+                <h2 class="title-sub-wrap">keep running</h2>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
