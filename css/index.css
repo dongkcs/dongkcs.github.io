@@ -81,8 +81,17 @@ nav li {
 }
 
 #p1 iframe {
-	width: 32em;
-	height: 18em;
+	/*width: 32em;*/
+	/*height: 18em;*/
+	width: 668px;
+	height: 440px;
+	border-radius: 12px;
+	/*width: 100%;*/
+	/*min-height: 1000px;*/
+	/*height: calc(80vh - 5em);*/
+	/*width: calc(80vw + 5em);*/
+	max-width: 1500px;
+	/*position: absolute;*/
 }
 
 #p1 figcaption {
